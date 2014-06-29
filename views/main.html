@@ -1,103 +1,53 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Muddy Out 'n' Back</title>
+    <title>Chores2Scores</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BEL Administration Portal">
-    <meta name="author" content="Muddy Out 'n' Back">
+    <meta name="description" content="Chores2Scores Application">
+    <meta name="author" content="Phil" >
 
-	<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-	<!-- Optional theme -->
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-	  
-	<!-- Narrow CSS -->
-		<link rel="stylesheet" href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="/ico/favicon.png">
-                                   -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
   </head>
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Chores2Scores</a>
-			<div class="nav-collapse collapse">
-            <ul class="nav">
-				<li><a href="/">Home</a></li>
-				<li><a href="#">Chores</a></li>
-				<li><a href="#">Scores</a></li>
-				<li><a href="#">Rewards</a></li>
-			</ul>
-			</div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-<!--Modal-->      
-	<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal hide fade" id="FeedbackModal" role="dialog" tabindex="-1">
-		<div class="modal-header">
-			<button aria-hidden="true" class="close" data-dismiss="modal" type="button">x</button>
-			<h3 id="myModalLabel">Page Feedback</h3>
-		</div>
-		<div class="modal-body">
-		<form role="form">
-    			<p class="help-block">Please select the feedback option and add descriptive comments below.</p>
-			<p class="help-block">This feedback is sent to the Trello Board <a href="http://goo.gl/WdcFTt">here</a></p>
-  		<div class="radio">
-    			<label>
-      			<input type="radio" name="optionsRadios" id="optionsRadios1" value="bug" checked> Bug
-		</div>
-  		<div class="radio">
-      			<input type="radio" name="optionsRadios" id="optionsRadios2" value="suggestion"> Suggestion
-    		</label>
-  		</div>
-		<textarea class="form-control" rows="3"></textarea>
-		<br>
-  		<button type="submit" class="btn btn-info">Submit</button>
-		</form>
-		</div>
-       		<div class="modal-footer">
-       			<button class="btn" data-dismiss="modal">Close</button></div>
-		</div>
-     	</div>
+<div class="header-container">
+     <header class="wrapper clearfix">
+                <h1 class="title">h1.title</h1>
+                <!-- <nav>
+                    <ul>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                    </ul>
+                </nav> -->
+     </header>
+</div>
+
 {% block content %}
   
 {% endblock content %}
 
-      <footer>
-        <p>&copy; Muddy Out 'n' Back Ltd 2013</p>
-	<p><a class="btn" data-toggle="modal" href="#FeedbackModal" role="button">Feedback</a></p>
-      </footer>
-    </div> <!-- /container -->
+      <div class="footer-container">
+            <footer class="wrapper">
+                <h3>footer</h3>
+            </footer>
+        </div>
 
-    <!-- Le javascript
-    ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.min.js"><\/script>')</script>
+	<script src="js/main.js"></script>
+	<script src="js/plugins.js"></script>
 
   </body>
 </html>
