@@ -73,7 +73,7 @@ class BaseHandler(webapp2.RequestHandler):
 	def jinja2(self):
 		return jinja2.get_jinja2(app=self.app)
 
-  	def render_template(
+	def render_template(
 		self,
 		filename,
 		template_values,
