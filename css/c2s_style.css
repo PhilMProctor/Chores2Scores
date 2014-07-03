@@ -1,0 +1,38 @@
+@media(min-width:320px) {
+.logocontainer	{ padding: 0px 15px; margin: 0 auto; }
+.box_leftgap { padding: 0px 10px; }
+.box_botgap	{ margin: 0px 0px 20px 0px; }
+.box_padding{ padding-top: 20%; }
+.box_padding { padding: 50px 0px; }
+}
+
+@media(min-width:768px) {
+.logocontainer	{ width: 750px; padding: 0px 15px; margin: 0 auto; }
+.box_leftgap { padding: 0px 10px; }
+.box_botgap	{ margin: 0px 0px 20px 0px; }
+.box_padding { padding-top: 20%; }
+.box_padding { height: 189px; line-height: 189px; padding: 0px; }
+}
+
+@media(min-width:992px) {
+.logocontainer	{ width: 700px; padding: 0px 15px; margin: 0 auto; text-align: center;}
+.box_leftgap { padding: 0px 6px; }
+.box_botgap	{ margin: 0px 0px 12px 0px; }
+.box_padding { padding-top: 15%; }
+.box_padding { height: 124px; line-height: 124px; padding: 0px; }
+.templatemo_graybg	{height: 397px; }
+}
+
+.home_box	{
+	background: #CC9933;
+	text-align: center;
+	width: 100%;
+	float: center;
+	position: relative;
+}
+.templatemo_graybg { 
+	float: center; 
+	background: #333333; 
+	overflow: hidden;
+	width: 80%;
+}

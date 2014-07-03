@@ -89,16 +89,12 @@ class BaseHandler(webapp2.RequestHandler):
 		}
 		self.render_template('message.html', params)
 		
-		 # this is needed for webapp2 sessions to work
 	def dispatch(self):
-		# Get a session store for this request.
 		self.session_store = sessions.get_store(request=self.request)
 
 		try:
-			# Dispatch the request.
 			webapp2.RequestHandler.dispatch(self)
 		finally:
-			# Save all sessions.
 			self.session_store.save_sessions(self.response)
 
 class MainHandler(BaseHandler):
@@ -106,7 +102,7 @@ class MainHandler(BaseHandler):
 		u = self.user_info
 		username = u['name'] if u else None
 		params = {'username': username}
-		self.render_template('home.html', params)
+		self.render_template('c2s.html', params)
 
 application = webapp2.WSGIApplication([
     webapp2.Route('/', MainHandler, name='home')
