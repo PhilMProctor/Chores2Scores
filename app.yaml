@@ -1,4 +1,4 @@
-application: triple-upgrade-622
+application: chores2scores
 version: 1
 runtime: python27
 api_version: 1
@@ -19,10 +19,14 @@ skip_files:
 handlers:
 - url: /css
   static_dir: css
+- url: /css/images
+  static_dir: css/images
 - url: /js
   static_dir: js
 - url: /js/vendor
   static_dir: js/vendor
+- url: /fonts
+  static_dir: fonts
 - url: /.*
   script: main.application
   
