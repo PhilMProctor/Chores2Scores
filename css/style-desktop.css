@@ -193,7 +193,7 @@
 			font-weight: 900;
 			font-size: 2.5em;
 			letter-spacing: -0.035em;
-			margin: 0 0 1em 0;
+			margin: 0 0 0.5em 0;
 		}
 
 /*********************************************************************************/
@@ -259,7 +259,8 @@
 		
 			#nav > ul > li.current > a
 			{
-				background: #d52349;
+				/*background: #d52349;*/
+				background: #FFAE1D;
 				color: #fff !important;
 				font-weight: 700;
 			}
@@ -327,8 +328,8 @@
 	#banner
 	{
 		position: relative;
-		padding: 8em 0;
-		margin: 4em 0 0 0;
+		padding: 6em 0;
+		margin: 2em 0 0 0;
 	}
 	
 		#banner header
