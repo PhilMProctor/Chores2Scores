@@ -102,7 +102,7 @@ class MainHandler(BaseHandler):
 		u = self.user_info
 		username = u['name'] if u else None
 		params = {'username': username}
-		self.render_template('c2s.html', params)
+		self.render_template('home.html', params)
 
 application = webapp2.WSGIApplication([
     webapp2.Route('/', MainHandler, name='home')

@@ -1,40 +1,31 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Chores2Scores</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chores2Scores Application">
-    <meta name="author" content="Phil" >
+    <meta name="author" content="Techno-Talk" >
 
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
-		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<noscript>
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-desktop.css" />
+	</noscript>
 
   </head>
 
-  <body>
+<body class="homepage">
+	<div id="header-wrapper">
+				<div id="header">
 
-<div class="header-container">
-     <header class="wrapper clearfix">
-                <h1 class="title">Chores2Scores</h1>
-                <!-- <nav>
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
-                </nav> -->
-     </header>
-</div>
 
 {% block content %}
   
 {% endblock content %}
+					
+	</div>
+				</div>
 
       <div class="footer-container">
             <footer class="wrapper">
@@ -44,10 +35,12 @@
 
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.min.js"><\/script>')</script>
-	<script src="js/main.js"></script>
-	<script src="js/plugins.js"></script>
+    	<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+
 
   </body>
 </html>
