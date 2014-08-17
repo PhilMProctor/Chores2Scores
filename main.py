@@ -48,8 +48,9 @@ class MainHandler(BaseHandler):
 
 		check_user = User.query()
 		if not check_user.get():
-			add_user = User(user = username, user_id = user.user_id())
-			add_user.put()
+			if not username == None:
+				add_user = User(user = username, user_id = user.user_id())
+				add_user.put()
 
 		params = {'username': username,
 		'active_url': active_url,
