@@ -7,6 +7,8 @@ from webapp2_extras import sessions
 from webapp2_extras import auth
 from google.appengine.api import users
 
+from models import User
+
 import webapp2
 import jinja2
 
@@ -29,12 +31,29 @@ class BaseHandler(webapp2.RequestHandler):
 		template = jinja_environment.get_template(filename)
 		self.response.out.write(template.render(template_values))
 
+
+	
+
 class MainHandler(BaseHandler):
 	def get(self):
-		"""u = self.user_info
-		username = u['name'] if u else None"""
-		username = 'Phil'
-		params = {'username': username}
+		user = users.get_current_user()
+		if user:
+			username = user.nickname()
+			active_url = users.create_logout_url("/")
+			url_text = "Logout"
+		else:
+			username = ""
+			active_url = users.create_login_url("/")
+			url_text = "Login"
+
+		check_user = User.query()
+		if not check_user.get():
+			add_user = User(user = username, user_id = user.user_id())
+			add_user.put()
+
+		params = {'username': username,
+		'active_url': active_url,
+		'url_text': url_text}
 		self.render_template('home.html', params)
 
 application = webapp2.WSGIApplication([

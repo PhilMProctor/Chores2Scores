@@ -21,13 +21,17 @@
 		<div id="header">
           
       <!-- Logo -->
-        <h1><a href="index.html">Chores2Scores</a></h1>
+        <h1><a href="#">Chores2Scores</a></h1>
           
         <!-- Nav -->
           <nav id="nav">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li class="current"><a href="">Login</a></li>
+              <li><a href="#">Home</a></li>
+              {% if username is none %}  
+                <li class="current"><a href="{{active_url}}">{{url_text}}</a></li>
+              {% else %}
+                <li class="current"><a href="{{active_url}}">{{url_text}}</a></li>
+              {% endif %}
             </ul>
           </nav>
 
@@ -41,7 +45,7 @@
 
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    	<script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 		<script src="js/jquery.dropotron.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
